@@ -4,2798 +4,806 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="EcoVida - Plataforma de sustentabilidade, educação ambiental e preservação do planeta.">
-
+    <meta name="description" content="EcoVida - Plataforma de sustentabilidade, educação ambiental e preservação do planeta.">
     <title>EcoVida | Plataforma Sustentável</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         CARREGAMENTO
-    ====================================================== -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+        <div class="loading-logo">🌱</div>
+        <h2>EcoVida</h2>
+        <p>Preparando um futuro mais sustentável...</p>
+        <div class="loading-bar"><div class="loading-progress"></div></div>
+    </div>
+</div>
 
-    <div class="loading-screen" id="loadingScreen">
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar">
 
-        <div class="loading-content">
+            <a href="#inicio" class="logo">
+                <div class="logo-icon">🌱</div>
+                <div class="logo-text">
+                    <strong>EcoVida</strong>
+                    <span>Planeta • Pessoas • Futuro</span>
+                </div>
+            </a>
 
-            <div class="loading-logo">
-                🌱
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#sustentabilidade" class="nav-link">Sustentabilidade</a></li>
+                <li><a href="#acoes" class="nav-link">Ações</a></li>
+                <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
+                <li><a href="#desafios" class="nav-link">Desafios</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button class="icon-button" id="searchButton" type="button" aria-label="Pesquisar">🔍</button>
+                <button class="icon-button" id="themeButton" type="button" aria-label="Alterar tema">🌙</button>
+                <button class="profile-button" id="profileButton" type="button">👤 <span>Meu perfil</span></button>
+                <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Abrir menu">☰</button>
             </div>
 
-            <h2>EcoVida</h2>
+        </nav>
+    </div>
+</header>
 
-            <p>Preparando um futuro mais sustentável...</p>
+<div class="search-panel" id="searchPanel">
+    <div class="container">
+        <div class="search-box">
+            <span>🔎</span>
+            <input type="search" id="searchInput" placeholder="Pesquisar na EcoVida...">
+            <button type="button" id="closeSearch">✕</button>
+        </div>
+        <div class="search-results" id="searchResults">
+            <p>Digite algo para pesquisar.</p>
+        </div>
+    </div>
+</div>
 
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
+<main>
+
+<section class="hero-section" id="inicio">
+    <div class="hero-background-shape shape-one"></div>
+    <div class="hero-background-shape shape-two"></div>
+
+    <div class="container">
+        <div class="hero-grid">
+
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span>🌎</span>
+                    <span>Construindo um futuro sustentável</span>
+                </div>
+
+                <h1>O futuro do planeta <span>começa com você.</span></h1>
+
+                <p class="hero-description">
+                    A EcoVida é uma plataforma criada para ajudar pessoas,
+                    escolas e comunidades a aprenderem sobre sustentabilidade
+                    e transformarem conhecimento em atitudes.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#acoes" class="btn btn-primary">Começar agora <span>→</span></a>
+                    <button type="button" class="btn btn-outline" id="heroVideoButton">▶ <span>Como funciona</span></button>
+                </div>
+
+                <div class="hero-mini-stats">
+                    <div><strong>10 mil+</strong><span>pessoas alcançadas</span></div>
+                    <div><strong>250+</strong><span>ações ambientais</span></div>
+                    <div><strong>100%</strong><span>foco no planeta</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="planet-card">
+                    <div class="planet-glow"></div>
+                    <div class="planet">🌎</div>
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="floating-leaf leaf-one">🍃</div>
+                    <div class="floating-leaf leaf-two">🌿</div>
+                    <div class="floating-leaf leaf-three">🌱</div>
+                </div>
+
+                <div class="floating-info info-top">
+                    <span class="floating-icon">♻️</span>
+                    <div><strong>Recicle</strong><small>Reduza seus resíduos</small></div>
+                </div>
+
+                <div class="floating-info info-bottom">
+                    <span class="floating-icon">💧</span>
+                    <div><strong>Economize</strong><small>Preserve nossos recursos</small></div>
+                </div>
             </div>
 
         </div>
-
     </div>
+</section>
 
+<section class="impact-section">
+    <div class="container">
+        <div class="impact-grid">
 
-    <!-- =====================================================
-         CABEÇALHO
-    ====================================================== -->
+            <article class="impact-card">
+                <div class="impact-icon">🌳</div>
+                <div><strong class="counter" data-target="12500">0</strong><span>árvores preservadas</span></div>
+            </article>
 
-    <header class="header" id="header">
+            <article class="impact-card">
+                <div class="impact-icon">♻️</div>
+                <div><strong class="counter" data-target="8700">0</strong><span>kg de resíduos reciclados</span></div>
+            </article>
 
-        <div class="container">
+            <article class="impact-card">
+                <div class="impact-icon">💧</div>
+                <div><strong class="counter" data-target="32000">0</strong><span>litros de água economizados</span></div>
+            </article>
 
-            <nav class="navbar">
+            <article class="impact-card">
+                <div class="impact-icon">⚡</div>
+                <div><strong class="counter" data-target="18400">0</strong><span>kWh economizados</span></div>
+            </article>
 
-                <!-- LOGO -->
+        </div>
+    </div>
+</section>
 
-                <a href="#inicio" class="logo">
+<section class="section about-section" id="sobre">
+    <div class="container">
 
-                    <div class="logo-icon">
-                        🌱
+        <div class="section-header">
+            <span class="section-label">SOBRE A ECOVIDA</span>
+            <h2>Informação que vira <span>atitude.</span></h2>
+            <p>A sustentabilidade pode começar com pequenas mudanças na rotina.</p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+                <div class="about-main-card">
+                    <div class="about-emoji">🌱</div>
+                    <h3>Pense verde.</h3>
+                    <p>Pequenas escolhas realizadas todos os dias podem gerar grandes impactos positivos para o planeta.</p>
+                </div>
+
+                <div class="about-small-card card-one">
+                    <strong>17</strong>
+                    <span>Objetivos de Desenvolvimento Sustentável</span>
+                </div>
+
+                <div class="about-small-card card-two">
+                    <strong>2030</strong>
+                    <span>Agenda global de sustentabilidade</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h3>Por que a sustentabilidade importa?</h3>
+
+                <p>
+                    O planeta possui recursos naturais limitados. A forma como produzimos,
+                    consumimos e descartamos influencia diretamente o meio ambiente.
+                </p>
+
+                <p>
+                    Sustentabilidade significa buscar um equilíbrio entre desenvolvimento,
+                    qualidade de vida e preservação dos recursos naturais.
+                </p>
+
+                <div class="about-features">
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <div>
+                            <strong>Consumo consciente</strong>
+                            <p>Comprar somente o necessário.</p>
+                        </div>
                     </div>
 
+                    <div class="feature">
+                        <span>✓</span>
+                        <div>
+                            <strong>Preservação ambiental</strong>
+                            <p>Proteger florestas, rios e animais.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <div>
+                            <strong>Responsabilidade social</strong>
+                            <p>Promover qualidade de vida e inclusão.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="button" class="btn btn-primary" id="learnMoreButton">
+                    Conheça nossa missão <span>→</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section sustainability-section" id="sustentabilidade">
+    <div class="container">
+
+        <div class="section-header center">
+            <span class="section-label">EDUCAÇÃO AMBIENTAL</span>
+            <h2>Os pilares da <span>sustentabilidade.</span></h2>
+            <p>A sustentabilidade envolve diferentes áreas que precisam caminhar juntas.</p>
+        </div>
+
+        <div class="pillars-grid">
+
+            <article class="pillar-card">
+                <div class="pillar-number">01</div>
+                <div class="pillar-icon">🌳</div>
+                <h3>Ambiental</h3>
+                <p>Preservação dos recursos naturais, biodiversidade, florestas, rios, oceanos e redução da poluição.</p>
+                <button type="button" class="text-button" data-pillar="ambiental">Explorar pilar →</button>
+            </article>
+
+            <article class="pillar-card">
+                <div class="pillar-number">02</div>
+                <div class="pillar-icon">🤝</div>
+                <h3>Social</h3>
+                <p>Igualdade, educação, saúde, inclusão, segurança e qualidade de vida.</p>
+                <button type="button" class="text-button" data-pillar="social">Explorar pilar →</button>
+            </article>
+
+            <article class="pillar-card">
+                <div class="pillar-number">03</div>
+                <div class="pillar-icon">📈</div>
+                <h3>Econômico</h3>
+                <p>Desenvolvimento econômico responsável, inovação e geração de valor.</p>
+                <button type="button" class="text-button" data-pillar="economico">Explorar pilar →</button>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section actions-section" id="acoes">
+    <div class="container">
+
+        <div class="section-header split-header">
+            <div>
+                <span class="section-label">FAÇA SUA PARTE</span>
+                <h2>Ações que fazem <span>a diferença.</span></h2>
+            </div>
+            <p>Escolha uma área e descubra atitudes práticas que podem ser aplicadas no seu dia a dia.</p>
+        </div>
+
+        <div class="actions-grid">
+
+            <article class="action-card large-card">
+                <div class="action-card-top">
+                    <div class="action-icon green">♻️</div>
+                    <span class="action-tag">RESÍDUOS</span>
+                </div>
+                <h3>Reciclagem</h3>
+                <p>Aprenda a separar, reduzir e reutilizar seus resíduos.</p>
+                <ul>
+                    <li>Separação correta</li>
+                    <li>Reutilização</li>
+                    <li>Compostagem</li>
+                </ul>
+                <button type="button" class="card-action-button" data-action="reciclagem">Ver guia completo →</button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-card-top">
+                    <div class="action-icon blue">💧</div>
+                    <span class="action-tag">ÁGUA</span>
+                </div>
+                <h3>Economia de água</h3>
+                <p>Descubra como diminuir o desperdício de água em casa.</p>
+                <button type="button" class="card-action-button" data-action="agua">Descobrir dicas →</button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-card-top">
+                    <div class="action-icon yellow">⚡</div>
+                    <span class="action-tag">ENERGIA</span>
+                </div>
+                <h3>Energia</h3>
+                <p>Aprenda a reduzir o consumo e utilizar energia de forma eficiente.</p>
+                <button type="button" class="card-action-button" data-action="energia">Descobrir dicas →</button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-card-top">
+                    <div class="action-icon purple">🚲</div>
+                    <span class="action-tag">TRANSPORTE</span>
+                </div>
+                <h3>Mobilidade sustentável</h3>
+                <p>Conheça alternativas de transporte que podem reduzir impactos ambientais.</p>
+                <button type="button" class="card-action-button" data-action="mobilidade">Explorar →</button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-card-top">
+                    <div class="action-icon orange">🥕</div>
+                    <span class="action-tag">ALIMENTAÇÃO</span>
+                </div>
+                <h3>Alimentação consciente</h3>
+                <p>Reduza o desperdício de alimentos e faça escolhas mais conscientes.</p>
+                <button type="button" class="card-action-button" data-action="alimentacao">Aprender mais →</button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-card-top">
+                    <div class="action-icon forest">🌲</div>
+                    <span class="action-tag">NATUREZA</span>
+                </div>
+                <h3>Preservação</h3>
+                <p>Aprenda maneiras de proteger ecossistemas e biodiversidade.</p>
+                <button type="button" class="card-action-button" data-action="natureza">Conhecer ações →</button>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section calculator-section" id="calculadora">
+    <div class="container">
+
+        <div class="calculator-wrapper">
+
+            <div class="calculator-intro">
+                <span class="section-label">FERRAMENTA ECOVIDA</span>
+                <h2>Descubra seus hábitos sustentáveis.</h2>
+                <p>Responda cinco perguntas sobre sua rotina e descubra como você pode melhorar suas práticas.</p>
+
+                <div class="calculator-benefits">
+                    <div><span>✓</span> Resultado instantâneo</div>
+                    <div><span>✓</span> Recomendações</div>
+                    <div><span>✓</span> Gratuito</div>
+                </div>
+            </div>
+
+            <div class="calculator-box">
+
+                <div class="calculator-progress">
+                    <div class="progress-label">
+                        <span>Pergunta <strong id="currentQuestion">1</strong> de 5</span>
+                        <span id="calculatorPercent">20%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="calculatorProgress"></div>
+                    </div>
+                </div>
+
+                <div class="calculator-question active" data-question="1">
+                    <span class="question-number">01</span>
+                    <h3>Como você costuma se locomover?</h3>
+                    <p>Escolha a alternativa mais próxima da sua rotina.</p>
+                    <div class="options">
+                        <button type="button" class="option" data-value="1">🚶 <span>A pé</span></button>
+                        <button type="button" class="option" data-value="2">🚲 <span>Bicicleta</span></button>
+                        <button type="button" class="option" data-value="3">🚌 <span>Transporte público</span></button>
+                        <button type="button" class="option" data-value="4">🚗 <span>Carro</span></button>
+                    </div>
+                </div>
+
+                <div class="calculator-question" data-question="2">
+                    <span class="question-number">02</span>
+                    <h3>Como você utiliza energia?</h3>
+                    <p>Pense nos seus hábitos em casa.</p>
+                    <div class="options">
+                        <button type="button" class="option" data-value="1">🌱 <span>Consumo baixo</span></button>
+                        <button type="button" class="option" data-value="2">🟢 <span>Consumo moderado</span></button>
+                        <button type="button" class="option" data-value="3">🟡 <span>Consumo alto</span></button>
+                        <button type="button" class="option" data-value="4">🔴 <span>Consumo muito alto</span></button>
+                    </div>
+                </div>
+
+                <div class="calculator-question" data-question="3">
+                    <span class="question-number">03</span>
+                    <h3>Você separa seus resíduos?</h3>
+                    <p>Como você normalmente descarta seu lixo?</p>
+                    <div class="options">
+                        <button type="button" class="option" data-value="1">♻️ <span>Sempre</span></button>
+                        <button type="button" class="option" data-value="2">🙂 <span>Na maioria das vezes</span></button>
+                        <button type="button" class="option" data-value="3">😐 <span>Às vezes</span></button>
+                        <button type="button" class="option" data-value="4">❌ <span>Nunca</span></button>
+                    </div>
+                </div>
+
+                <div class="calculator-question" data-question="4">
+                    <span class="question-number">04</span>
+                    <h3>Como é seu consumo de água?</h3>
+                    <p>Pense nos seus hábitos durante o dia.</p>
+                    <div class="options">
+                        <button type="button" class="option" data-value="1">💧 <span>Economizo bastante</span></button>
+                        <button type="button" class="option" data-value="2">🚿 <span>Economizo às vezes</span></button>
+                        <button type="button" class="option" data-value="3">💦 <span>Não presto atenção</span></button>
+                        <button type="button" class="option" data-value="4">🌊 <span>Consumo muito</span></button>
+                    </div>
+                </div>
+
+                <div class="calculator-question" data-question="5">
+                    <span class="question-number">05</span>
+                    <h3>Você evita produtos descartáveis?</h3>
+                    <p>Pense em sacolas, copos e garrafas.</p>
+                    <div class="options">
+                        <button type="button" class="option" data-value="1">🌱 <span>Sempre</span></button>
+                        <button type="button" class="option" data-value="2">♻️ <span>Frequentemente</span></button>
+                        <button type="button" class="option" data-value="3">🤔 <span>Às vezes</span></button>
+                        <button type="button" class="option" data-value="4">🛍️ <span>Raramente</span></button>
+                    </div>
+                </div>
+
+                <div class="calculator-result" id="calculatorResult">
+                    <div class="result-emoji">🌎</div>
+                    <span>SEU RESULTADO</span>
+                    <h3 id="resultTitle">Excelente!</h3>
+
+                    <div class="score-circle">
+                        <strong id="resultScore">0</strong>
+                        <span>pontos</span>
+                    </div>
+
+                    <p id="resultDescription">Seus hábitos demonstram preocupação com o meio ambiente.</p>
+                    <button type="button" class="btn btn-primary" id="restartCalculator">Refazer avaliação</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section challenge-section" id="desafios">
+    <div class="container">
+
+        <div class="section-header center">
+            <span class="section-label">DESAFIO ECOVIDA</span>
+            <h2>7 dias para <span>mudar seus hábitos.</span></h2>
+            <p>Complete pequenas ações durante uma semana e acompanhe seu progresso.</p>
+        </div>
+
+        <div class="challenge-container">
+
+            <div class="challenge-header">
+                <div>
+                    <span>🌱 DESAFIO ATUAL</span>
+                    <h3>Semana Sustentável</h3>
+                    <p>Complete os sete desafios.</p>
+                </div>
+                <div class="challenge-badge">🏆</div>
+            </div>
+
+            <div class="challenge-progress">
+                <div>
+                    <strong>Seu progresso</strong>
+                    <span id="challengePercent">0%</span>
+                </div>
+                <div class="challenge-progress-bar">
+                    <div id="challengeProgress"></div>
+                </div>
+            </div>
+
+            <div class="challenge-days">
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">01</div>
+                    <div class="day-content"><span>DIA 1</span><strong>Economize água</strong><p>Tome um banho mais curto.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">02</div>
+                    <div class="day-content"><span>DIA 2</span><strong>Recicle</strong><p>Separe corretamente seus resíduos.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">03</div>
+                    <div class="day-content"><span>DIA 3</span><strong>Economize energia</strong><p>Desligue aparelhos sem uso.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">04</div>
+                    <div class="day-content"><span>DIA 4</span><strong>Evite descartáveis</strong><p>Use produtos reutilizáveis.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">05</div>
+                    <div class="day-content"><span>DIA 5</span><strong>Caminhe</strong><p>Faça um trajeto curto a pé.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">06</div>
+                    <div class="day-content"><span>DIA 6</span><strong>Evite desperdício</strong><p>Aproveite melhor os alimentos.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+                <label class="challenge-day">
+                    <input type="checkbox" class="challenge-checkbox">
+                    <div class="day-number">07</div>
+                    <div class="day-content"><span>DIA 7</span><strong>Cuide da natureza</strong><p>Plante ou cuide de uma planta.</p></div>
+                    <div class="day-check">✓</div>
+                </label>
+
+            </div>
+
+            <div class="challenge-complete" id="challengeComplete">
+                <div class="complete-icon">🎉</div>
+                <h3>Parabéns!</h3>
+                <p>Você completou o desafio de 7 dias. Continue fazendo a diferença!</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section projects-section" id="projetos">
+    <div class="container">
+
+        <div class="section-header split-header">
+            <div>
+                <span class="section-label">PROJETOS</span>
+                <h2>Ideias que <span>transformam.</span></h2>
+            </div>
+            <p>Conheça ideias que podem ser aplicadas em escolas, empresas e comunidades.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card project-featured">
+                <div class="project-image project-green"><span>🌳</span></div>
+                <div class="project-content">
+                    <span class="project-category">PRESERVAÇÃO</span>
+                    <h3>Floresta Viva</h3>
+                    <p>Projeto de conscientização sobre preservação de áreas verdes e recuperação ambiental.</p>
+                    <button type="button" class="text-button" data-project="floresta">Conhecer projeto →</button>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image project-blue"><span>💧</span></div>
+                <div class="project-content">
+                    <span class="project-category">ÁGUA</span>
+                    <h3>Cada Gota Conta</h3>
+                    <p>Campanha de conscientização sobre consumo responsável de água.</p>
+                    <button type="button" class="text-button" data-project="agua">Conhecer projeto →</button>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image project-yellow"><span>☀️</span></div>
+                <div class="project-content">
+                    <span class="project-category">ENERGIA</span>
+                    <h3>Energia do Futuro</h3>
+                    <p>Educação sobre fontes renováveis e eficiência energética.</p>
+                    <button type="button" class="text-button" data-project="energia">Conhecer projeto →</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="tips-section">
+    <div class="container">
+        <div class="tips-wrapper">
+            <div class="tips-icon">💡</div>
+
+            <div class="tips-content">
+                <span>DICA SUSTENTÁVEL DO DIA</span>
+                <h3 id="dailyTip">Utilize uma garrafa reutilizável para reduzir o uso de plástico.</h3>
+            </div>
+
+            <button type="button" class="btn btn-light" id="newTipButton">
+                Nova dica <span>↻</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="section faq-section">
+    <div class="container">
+
+        <div class="section-header center">
+            <span class="section-label">DÚVIDAS FREQUENTES</span>
+            <h2>Perguntas sobre <span>sustentabilidade.</span></h2>
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    <span>O que é sustentabilidade?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sustentabilidade é a busca por desenvolvimento que atenda às necessidades atuais sem comprometer as futuras gerações.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    <span>Como posso começar?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Comece com pequenas atitudes: economize água e energia, reduza desperdícios, reutilize materiais e separe os resíduos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    <span>Por que reciclar?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>A reciclagem pode reduzir a quantidade de resíduos descartados e permite que determinados materiais sejam reaproveitados.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    <span>O que são os ODS?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Os Objetivos de Desenvolvimento Sustentável são 17 objetivos globais que fazem parte da Agenda 2030.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    <span>Uma pessoa consegue fazer diferença?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim. Pequenas atitudes individuais podem influenciar famílias, escolas, empresas e comunidades.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="newsletter-section">
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <div class="newsletter-content">
+                <span>🌱 FAÇA PARTE DA MUDANÇA</span>
+                <h2>Receba conteúdos sustentáveis.</h2>
+                <p>Cadastre seu e-mail para receber dicas, desafios e novidades.</p>
+            </div>
+
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Seu melhor e-mail" autocomplete="email" required>
+                <button type="submit" class="btn btn-primary">Quero participar</button>
+            </form>
+
+            <div class="newsletter-message" id="newsletterMessage"></div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo footer-logo">
+                    <div class="logo-icon">🌱</div>
                     <div class="logo-text">
-
                         <strong>EcoVida</strong>
-
                         <span>Planeta • Pessoas • Futuro</span>
-
                     </div>
-
                 </a>
 
-
-                <!-- MENU -->
-
-                <ul class="nav-menu" id="navMenu">
-
-                    <li>
-                        <a href="#inicio" class="nav-link active">
-                            Início
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#sobre" class="nav-link">
-                            Sobre
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#sustentabilidade" class="nav-link">
-                            Sustentabilidade
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#acoes" class="nav-link">
-                            Ações
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#calculadora" class="nav-link">
-                            Calculadora
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#desafios" class="nav-link">
-                            Desafios
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#projetos" class="nav-link">
-                            Projetos
-                        </a>
-                    </li>
-
-                </ul>
-
-
-                <!-- AÇÕES -->
-
-                <div class="header-actions">
-
-                    <button
-                        class="icon-button"
-                        id="searchButton"
-                        type="button"
-                        aria-label="Pesquisar">
-
-                        🔍
-
-                    </button>
-
-                    <button
-                        class="icon-button"
-                        id="themeButton"
-                        type="button"
-                        aria-label="Alterar tema">
-
-                        🌙
-
-                    </button>
-
-                    <button
-                        class="profile-button"
-                        id="profileButton"
-                        type="button">
-
-                        👤
-
-                        <span>Meu perfil</span>
-
-                    </button>
-
-                    <button
-                        class="mobile-menu-button"
-                        id="mobileMenuButton"
-                        type="button"
-                        aria-label="Abrir menu">
-
-                        ☰
-
-                    </button>
-
-                </div>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <!-- =====================================================
-         PESQUISA
-    ====================================================== -->
-
-    <div class="search-panel" id="searchPanel">
-
-        <div class="container">
-
-            <div class="search-box">
-
-                <span>🔎</span>
-
-                <input
-                    type="search"
-                    id="searchInput"
-                    placeholder="Pesquisar na EcoVida...">
-
-                <button
-                    type="button"
-                    id="closeSearch">
-
-                    ✕
-
-                </button>
-
-            </div>
-
-            <div
-                class="search-results"
-                id="searchResults">
-
                 <p>
-                    Digite algo para pesquisar.
+                    Uma plataforma dedicada à educação ambiental
+                    e à construção de um futuro mais sustentável.
                 </p>
 
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+
             </div>
 
+            <div class="footer-column">
+                <h3>Plataforma</h3>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#acoes">Ações</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#desafios">Desafios</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Conteúdos</h3>
+                <a href="#sustentabilidade">Sustentabilidade</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#calculadora">Pegada ecológica</a>
+                <a href="#desafios">Desafios</a>
+                <a href="#">Materiais educativos</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <a href="mailto:contato@ecovida.com">📧 contato@ecovida.com</a>
+                <a href="#">📍 Brasil</a>
+                <a href="#">🌎 Pelo planeta</a>
+                <button type="button" class="footer-contact-button" id="contactButton">Fale conosco →</button>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 EcoVida. Todos os direitos reservados.</p>
+
+            <div>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos de uso</a>
+            </div>
         </div>
 
     </div>
+</footer>
 
+<button type="button" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
-    <!-- =====================================================
-         CONTEÚDO PRINCIPAL
-    ====================================================== -->
+<div class="modal" id="mainModal" aria-hidden="true">
+    <div class="modal-overlay"></div>
 
-    <main>
+    <div class="modal-content">
+        <button type="button" class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
 
+<div class="notification" id="notification">
+    <div class="notification-icon">✓</div>
 
-        <!-- =================================================
-             HERO
-        ================================================== -->
-
-        <section class="hero-section" id="inicio">
-
-            <div class="hero-background-shape shape-one"></div>
-            <div class="hero-background-shape shape-two"></div>
-
-            <div class="container">
-
-                <div class="hero-grid">
-
-                    <!-- TEXTO -->
-
-                    <div class="hero-content">
-
-                        <div class="hero-tag">
-
-                            <span>🌎</span>
-
-                            <span>
-                                Construindo um futuro sustentável
-                            </span>
-
-                        </div>
-
-                        <h1>
-
-                            O futuro do planeta
-                            <span>começa com você.</span>
-
-                        </h1>
-
-                        <p class="hero-description">
-
-                            A EcoVida é uma plataforma criada para
-                            ajudar pessoas, escolas e comunidades a
-                            aprenderem sobre sustentabilidade e
-                            transformarem conhecimento em atitudes.
-
-                        </p>
-
-                        <div class="hero-buttons">
-
-                            <a
-                                href="#acoes"
-                                class="btn btn-primary">
-
-                                Começar agora
-
-                                <span>→</span>
-
-                            </a>
-
-                            <button
-                                type="button"
-                                class="btn btn-outline"
-                                id="heroVideoButton">
-
-                                ▶
-
-                                <span>
-                                    Como funciona
-                                </span>
-
-                            </button>
-
-                        </div>
-
-
-                        <!-- ESTATÍSTICAS -->
-
-                        <div class="hero-mini-stats">
-
-                            <div>
-
-                                <strong>10 mil+</strong>
-
-                                <span>
-                                    pessoas alcançadas
-                                </span>
-
-                            </div>
-
-                            <div>
-
-                                <strong>250+</strong>
-
-                                <span>
-                                    ações ambientais
-                                </span>
-
-                            </div>
-
-                            <div>
-
-                                <strong>100%</strong>
-
-                                <span>
-                                    foco no planeta
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PLANETA -->
-
-                    <div class="hero-visual">
-
-                        <div class="planet-card">
-
-                            <div class="planet-glow"></div>
-
-                            <div class="planet">
-                                🌎
-                            </div>
-
-                            <div class="orbit orbit-one"></div>
-                            <div class="orbit orbit-two"></div>
-
-                            <div class="floating-leaf leaf-one">
-                                🍃
-                            </div>
-
-                            <div class="floating-leaf leaf-two">
-                                🌿
-                            </div>
-
-                            <div class="floating-leaf leaf-three">
-                                🌱
-                            </div>
-
-                        </div>
-
-
-                        <div class="floating-info info-top">
-
-                            <span class="floating-icon">
-                                ♻️
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    Recicle
-                                </strong>
-
-                                <small>
-                                    Reduza seus resíduos
-                                </small>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="floating-info info-bottom">
-
-                            <span class="floating-icon">
-                                💧
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    Economize
-                                </strong>
-
-                                <small>
-                                    Preserve nossos recursos
-                                </small>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             IMPACTO
-        ================================================== -->
-
-        <section class="impact-section">
-
-            <div class="container">
-
-                <div class="impact-grid">
-
-                    <article class="impact-card">
-
-                        <div class="impact-icon">
-                            🌳
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="12500">
-
-                                0
-
-                            </strong>
-
-                            <span>
-                                árvores preservadas
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="impact-card">
-
-                        <div class="impact-icon">
-                            ♻️
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="8700">
-
-                                0
-
-                            </strong>
-
-                            <span>
-                                kg de resíduos reciclados
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="impact-card">
-
-                        <div class="impact-icon">
-                            💧
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="32000">
-
-                                0
-
-                            </strong>
-
-                            <span>
-                                litros de água economizados
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="impact-card">
-
-                        <div class="impact-icon">
-                            ⚡
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="18400">
-
-                                0
-
-                            </strong>
-
-                            <span>
-                                kWh economizados
-                            </span>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             SOBRE
-        ================================================== -->
-
-        <section
-            class="section about-section"
-            id="sobre">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        SOBRE A ECOVIDA
-                    </span>
-
-                    <h2>
-
-                        Informação que vira
-                        <span>atitude.</span>
-
-                    </h2>
-
-                    <p>
-
-                        A sustentabilidade pode começar com
-                        pequenas mudanças na rotina.
-
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-
-                    <!-- VISUAL -->
-
-                    <div class="about-image">
-
-                        <div class="about-main-card">
-
-                            <div class="about-emoji">
-                                🌱
-                            </div>
-
-                            <h3>
-                                Pense verde.
-                            </h3>
-
-                            <p>
-
-                                Pequenas escolhas realizadas todos
-                                os dias podem gerar grandes impactos
-                                positivos para o planeta.
-
-                            </p>
-
-                        </div>
-
-
-                        <div class="about-small-card card-one">
-
-                            <strong>
-                                17
-                            </strong>
-
-                            <span>
-                                Objetivos de Desenvolvimento Sustentável
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-small-card card-two">
-
-                            <strong>
-                                2030
-                            </strong>
-
-                            <span>
-                                Agenda global de sustentabilidade
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TEXTO -->
-
-                    <div class="about-content">
-
-                        <h3>
-                            Por que a sustentabilidade importa?
-                        </h3>
-
-                        <p>
-
-                            O planeta possui recursos naturais
-                            limitados. A forma como produzimos,
-                            consumimos e descartamos influencia
-                            diretamente o meio ambiente.
-
-                        </p>
-
-                        <p>
-
-                            Sustentabilidade significa buscar um
-                            equilíbrio entre desenvolvimento,
-                            qualidade de vida e preservação dos
-                            recursos naturais.
-
-                        </p>
-
-
-                        <div class="about-features">
-
-                            <div class="feature">
-
-                                <span>✓</span>
-
-                                <div>
-
-                                    <strong>
-                                        Consumo consciente
-                                    </strong>
-
-                                    <p>
-                                        Comprar somente o necessário.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="feature">
-
-                                <span>✓</span>
-
-                                <div>
-
-                                    <strong>
-                                        Preservação ambiental
-                                    </strong>
-
-                                    <p>
-                                        Proteger florestas, rios e animais.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="feature">
-
-                                <span>✓</span>
-
-                                <div>
-
-                                    <strong>
-                                        Responsabilidade social
-                                    </strong>
-
-                                    <p>
-                                        Promover qualidade de vida e inclusão.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            id="learnMoreButton">
-
-                            Conheça nossa missão
-
-                            <span>→</span>
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             PILARES
-        ================================================== -->
-
-        <section
-            class="section sustainability-section"
-            id="sustentabilidade">
-
-            <div class="container">
-
-                <div class="section-header center">
-
-                    <span class="section-label">
-                        EDUCAÇÃO AMBIENTAL
-                    </span>
-
-                    <h2>
-
-                        Os pilares da
-                        <span>sustentabilidade.</span>
-
-                    </h2>
-
-                    <p>
-
-                        A sustentabilidade envolve diferentes
-                        áreas que precisam caminhar juntas.
-
-                    </p>
-
-                </div>
-
-
-                <div class="pillars-grid">
-
-
-                    <!-- AMBIENTAL -->
-
-                    <article class="pillar-card">
-
-                        <div class="pillar-number">
-                            01
-                        </div>
-
-                        <div class="pillar-icon">
-                            🌳
-                        </div>
-
-                        <h3>
-                            Ambiental
-                        </h3>
-
-                        <p>
-
-                            Preservação dos recursos naturais,
-                            biodiversidade, florestas, rios,
-                            oceanos e redução da poluição.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="text-button"
-                            data-pillar="ambiental">
-
-                            Explorar pilar →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- SOCIAL -->
-
-                    <article class="pillar-card">
-
-                        <div class="pillar-number">
-                            02
-                        </div>
-
-                        <div class="pillar-icon">
-                            🤝
-                        </div>
-
-                        <h3>
-                            Social
-                        </h3>
-
-                        <p>
-
-                            Igualdade, educação, saúde, inclusão,
-                            segurança e qualidade de vida.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="text-button"
-                            data-pillar="social">
-
-                            Explorar pilar →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- ECONÔMICO -->
-
-                    <article class="pillar-card">
-
-                        <div class="pillar-number">
-                            03
-                        </div>
-
-                        <div class="pillar-icon">
-                            📈
-                        </div>
-
-                        <h3>
-                            Econômico
-                        </h3>
-
-                        <p>
-
-                            Desenvolvimento econômico responsável,
-                            inovação e geração de valor.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="text-button"
-                            data-pillar="economico">
-
-                            Explorar pilar →
-
-                        </button>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             AÇÕES SUSTENTÁVEIS
-        ================================================== -->
-
-        <section
-            class="section actions-section"
-            id="acoes">
-
-            <div class="container">
-
-                <div class="section-header split-header">
-
-                    <div>
-
-                        <span class="section-label">
-                            FAÇA SUA PARTE
-                        </span>
-
-                        <h2>
-
-                            Ações que fazem
-                            <span>a diferença.</span>
-
-                        </h2>
-
-                    </div>
-
-                    <p>
-
-                        Escolha uma área e descubra atitudes
-                        práticas que podem ser aplicadas
-                        no seu dia a dia.
-
-                    </p>
-
-                </div>
-
-
-                <div class="actions-grid">
-
-
-                    <!-- RECICLAGEM -->
-
-                    <article class="action-card large-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon green">
-                                ♻️
-                            </div>
-
-                            <span class="action-tag">
-                                RESÍDUOS
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Reciclagem
-                        </h3>
-
-                        <p>
-
-                            Aprenda a separar, reduzir e
-                            reutilizar seus resíduos.
-
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Separação correta
-                            </li>
-
-                            <li>
-                                Reutilização
-                            </li>
-
-                            <li>
-                                Compostagem
-                            </li>
-
-                        </ul>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="reciclagem">
-
-                            Ver guia completo →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- ÁGUA -->
-
-                    <article class="action-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon blue">
-                                💧
-                            </div>
-
-                            <span class="action-tag">
-                                ÁGUA
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Economia de água
-                        </h3>
-
-                        <p>
-
-                            Descubra como diminuir o desperdício
-                            de água em casa.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="agua">
-
-                            Descobrir dicas →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- ENERGIA -->
-
-                    <article class="action-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon yellow">
-                                ⚡
-                            </div>
-
-                            <span class="action-tag">
-                                ENERGIA
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Energia
-                        </h3>
-
-                        <p>
-
-                            Aprenda a reduzir o consumo
-                            e utilizar energia de forma eficiente.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="energia">
-
-                            Descobrir dicas →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- MOBILIDADE -->
-
-                    <article class="action-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon purple">
-                                🚲
-                            </div>
-
-                            <span class="action-tag">
-                                TRANSPORTE
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Mobilidade sustentável
-                        </h3>
-
-                        <p>
-
-                            Conheça alternativas de transporte
-                            que podem reduzir impactos ambientais.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="mobilidade">
-
-                            Explorar →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- ALIMENTAÇÃO -->
-
-                    <article class="action-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon orange">
-                                🥕
-                            </div>
-
-                            <span class="action-tag">
-                                ALIMENTAÇÃO
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Alimentação consciente
-                        </h3>
-
-                        <p>
-
-                            Reduza o desperdício de alimentos
-                            e faça escolhas mais conscientes.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="alimentacao">
-
-                            Aprender mais →
-
-                        </button>
-
-                    </article>
-
-
-                    <!-- NATUREZA -->
-
-                    <article class="action-card">
-
-                        <div class="action-card-top">
-
-                            <div class="action-icon forest">
-                                🌲
-                            </div>
-
-                            <span class="action-tag">
-                                NATUREZA
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Preservação
-                        </h3>
-
-                        <p>
-
-                            Aprenda maneiras de proteger
-                            ecossistemas e biodiversidade.
-
-                        </p>
-
-                        <button
-                            type="button"
-                            class="card-action-button"
-                            data-action="natureza">
-
-                            Conhecer ações →
-
-                        </button>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             CALCULADORA
-        ================================================== -->
-
-        <section
-            class="section calculator-section"
-            id="calculadora">
-
-            <div class="container">
-
-                <div class="calculator-wrapper">
-
-
-                    <!-- INTRODUÇÃO -->
-
-                    <div class="calculator-intro">
-
-                        <span class="section-label">
-                            FERRAMENTA ECOVIDA
-                        </span>
-
-                        <h2>
-                            Descubra seus hábitos sustentáveis.
-                        </h2>
-
-                        <p>
-
-                            Responda cinco perguntas sobre sua
-                            rotina e descubra como você pode
-                            melhorar suas práticas.
-
-                        </p>
-
-
-                        <div class="calculator-benefits">
-
-                            <div>
-                                <span>✓</span>
-                                Resultado instantâneo
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Recomendações
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Gratuito
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- CALCULADORA -->
-
-                    <div class="calculator-box">
-
-                        <div class="calculator-progress">
-
-                            <div class="progress-label">
-
-                                <span>
-                                    Pergunta
-                                    <strong id="currentQuestion">
-                                        1
-                                    </strong>
-                                    de 5
-                                </span>
-
-                                <span id="calculatorPercent">
-                                    20%
-                                </span>
-
-                            </div>
-
-                            <div class="progress-track">
-
-                                <div
-                                    class="progress-fill"
-                                    id="calculatorProgress">
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- PERGUNTA 1 -->
-
-                        <div
-                            class="calculator-question active"
-                            data-question="1">
-
-                            <span class="question-number">
-                                01
-                            </span>
-
-                            <h3>
-                                Como você costuma se locomover?
-                            </h3>
-
-                            <p>
-                                Escolha a alternativa mais próxima
-                                da sua rotina.
-                            </p>
-
-                            <div class="options">
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="1">
-
-                                    🚶
-                                    <span>A pé</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="2">
-
-                                    🚲
-                                    <span>Bicicleta</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="3">
-
-                                    🚌
-                                    <span>Transporte público</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="4">
-
-                                    🚗
-                                    <span>Carro</span>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- PERGUNTA 2 -->
-
-                        <div
-                            class="calculator-question"
-                            data-question="2">
-
-                            <span class="question-number">
-                                02
-                            </span>
-
-                            <h3>
-                                Como você utiliza energia?
-                            </h3>
-
-                            <p>
-                                Pense nos seus hábitos em casa.
-                            </p>
-
-                            <div class="options">
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="1">
-
-                                    🌱
-                                    <span>Consumo baixo</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="2">
-
-                                    🟢
-                                    <span>Consumo moderado</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="3">
-
-                                    🟡
-                                    <span>Consumo alto</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="4">
-
-                                    🔴
-                                    <span>Consumo muito alto</span>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- PERGUNTA 3 -->
-
-                        <div
-                            class="calculator-question"
-                            data-question="3">
-
-                            <span class="question-number">
-                                03
-                            </span>
-
-                            <h3>
-                                Você separa seus resíduos?
-                            </h3>
-
-                            <p>
-                                Como você normalmente descarta seu lixo?
-                            </p>
-
-                            <div class="options">
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="1">
-
-                                    ♻️
-                                    <span>Sempre</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="2">
-
-                                    🙂
-                                    <span>Na maioria das vezes</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="3">
-
-                                    😐
-                                    <span>Às vezes</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="4">
-
-                                    ❌
-                                    <span>Nunca</span>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- PERGUNTA 4 -->
-
-                        <div
-                            class="calculator-question"
-                            data-question="4">
-
-                            <span class="question-number">
-                                04
-                            </span>
-
-                            <h3>
-                                Como é seu consumo de água?
-                            </h3>
-
-                            <p>
-                                Pense nos seus hábitos durante o dia.
-                            </p>
-
-                            <div class="options">
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="1">
-
-                                    💧
-                                    <span>Economizo bastante</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="2">
-
-                                    🚿
-                                    <span>Economizo às vezes</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="3">
-
-                                    💦
-                                    <span>Não presto atenção</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="4">
-
-                                    🌊
-                                    <span>Consumo muito</span>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- PERGUNTA 5 -->
-
-                        <div
-                            class="calculator-question"
-                            data-question="5">
-
-                            <span class="question-number">
-                                05
-                            </span>
-
-                            <h3>
-                                Você evita produtos descartáveis?
-                            </h3>
-
-                            <p>
-                                Pense em sacolas, copos e garrafas.
-                            </p>
-
-                            <div class="options">
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="1">
-
-                                    🌱
-                                    <span>Sempre</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="2">
-
-                                    ♻️
-                                    <span>Frequentemente</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="3">
-
-                                    🤔
-                                    <span>Às vezes</span>
-
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="option"
-                                    data-value="4">
-
-                                    🛍️
-                                    <span>Raramente</span>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- RESULTADO -->
-
-                        <div
-                            class="calculator-result"
-                            id="calculatorResult">
-
-                            <div class="result-emoji">
-                                🌎
-                            </div>
-
-                            <span>
-                                SEU RESULTADO
-                            </span>
-
-                            <h3 id="resultTitle">
-                                Excelente!
-                            </h3>
-
-                            <div class="score-circle">
-
-                                <strong id="resultScore">
-                                    0
-                                </strong>
-
-                                <span>
-                                    pontos
-                                </span>
-
-                            </div>
-
-                            <p id="resultDescription">
-
-                                Seus hábitos demonstram preocupação
-                                com o meio ambiente.
-
-                            </p>
-
-                            <button
-                                type="button"
-                                class="btn btn-primary"
-                                id="restartCalculator">
-
-                                Refazer avaliação
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             DESAFIO 7 DIAS
-        ================================================== -->
-
-        <section
-            class="section challenge-section"
-            id="desafios">
-
-            <div class="container">
-
-                <div class="section-header center">
-
-                    <span class="section-label">
-                        DESAFIO ECOVIDA
-                    </span>
-
-                    <h2>
-
-                        7 dias para
-                        <span>mudar seus hábitos.</span>
-
-                    </h2>
-
-                    <p>
-
-                        Complete pequenas ações durante uma semana
-                        e acompanhe seu progresso.
-
-                    </p>
-
-                </div>
-
-
-                <div class="challenge-container">
-
-
-                    <div class="challenge-header">
-
-                        <div>
-
-                            <span>
-                                🌱 DESAFIO ATUAL
-                            </span>
-
-                            <h3>
-                                Semana Sustentável
-                            </h3>
-
-                            <p>
-                                Complete os sete desafios.
-                            </p>
-
-                        </div>
-
-                        <div class="challenge-badge">
-                            🏆
-                        </div>
-
-                    </div>
-
-
-                    <div class="challenge-progress">
-
-                        <div>
-
-                            <strong>
-                                Seu progresso
-                            </strong>
-
-                            <span id="challengePercent">
-                                0%
-                            </span>
-
-                        </div>
-
-                        <div class="challenge-progress-bar">
-
-                            <div id="challengeProgress"></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="challenge-days">
-
-
-                        <!-- DIA 1 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                01
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 1
-                                </span>
-
-                                <strong>
-                                    Economize água
-                                </strong>
-
-                                <p>
-                                    Tome um banho mais curto.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 2 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                02
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 2
-                                </span>
-
-                                <strong>
-                                    Recicle
-                                </strong>
-
-                                <p>
-                                    Separe corretamente seus resíduos.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 3 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                03
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 3
-                                </span>
-
-                                <strong>
-                                    Economize energia
-                                </strong>
-
-                                <p>
-                                    Desligue aparelhos sem uso.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 4 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                04
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 4
-                                </span>
-
-                                <strong>
-                                    Evite descartáveis
-                                </strong>
-
-                                <p>
-                                    Use produtos reutilizáveis.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 5 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                05
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 5
-                                </span>
-
-                                <strong>
-                                    Caminhe
-                                </strong>
-
-                                <p>
-                                    Faça um trajeto curto a pé.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 6 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                06
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 6
-                                </span>
-
-                                <strong>
-                                    Evite desperdício
-                                </strong>
-
-                                <p>
-                                    Aproveite melhor os alimentos.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-
-                        <!-- DIA 7 -->
-
-                        <label class="challenge-day">
-
-                            <input
-                                type="checkbox"
-                                class="challenge-checkbox">
-
-                            <div class="day-number">
-                                07
-                            </div>
-
-                            <div class="day-content">
-
-                                <span>
-                                    DIA 7
-                                </span>
-
-                                <strong>
-                                    Cuide da natureza
-                                </strong>
-
-                                <p>
-                                    Plante ou cuide de uma planta.
-                                </p>
-
-                            </div>
-
-                            <div class="day-check">
-                                ✓
-                            </div>
-
-                        </label>
-
-                    </div>
-
-
-                    <!-- CONCLUSÃO -->
-
-                    <div
-                        class="challenge-complete"
-                        id="challengeComplete">
-
-                        <div class="complete-icon">
-                            🎉
-                        </div>
-
-                        <h3>
-                            Parabéns!
-                        </h3>
-
-                        <p>
-
-                            Você completou o desafio de 7 dias.
-                            Continue fazendo a diferença!
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             PROJETOS
-        ================================================== -->
-
-        <section
-            class="section projects-section"
-            id="projetos">
-
-            <div class="container">
-
-                <div class="section-header split-header">
-
-                    <div>
-
-                        <span class="section-label">
-                            PROJETOS
-                        </span>
-
-                        <h2>
-
-                            Ideias que
-                            <span>transformam.</span>
-
-                        </h2>
-
-                    </div>
-
-                    <p>
-
-                        Conheça ideias que podem ser aplicadas
-                        em escolas, empresas e comunidades.
-
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-
-                    <!-- PROJETO 1 -->
-
-                    <article class="project-card project-featured">
-
-                        <div class="project-image project-green">
-
-                            <span>
-                                🌳
-                            </span>
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-category">
-                                PRESERVAÇÃO
-                            </span>
-
-                            <h3>
-                                Floresta Viva
-                            </h3>
-
-                            <p>
-
-                                Projeto de conscientização sobre
-                                preservação de áreas verdes e
-                                recuperação ambiental.
-
-                            </p>
-
-                            <button
-                                type="button"
-                                class="text-button"
-                                data-project="floresta">
-
-                                Conhecer projeto →
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJETO 2 -->
-
-                    <article class="project-card">
-
-                        <div class="project-image project-blue">
-
-                            <span>
-                                💧
-                            </span>
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-category">
-                                ÁGUA
-                            </span>
-
-                            <h3>
-                                Cada Gota Conta
-                            </h3>
-
-                            <p>
-
-                                Campanha de conscientização
-                                sobre consumo responsável de água.
-
-                            </p>
-
-                            <button
-                                type="button"
-                                class="text-button"
-                                data-project="agua">
-
-                                Conhecer projeto →
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJETO 3 -->
-
-                    <article class="project-card">
-
-                        <div class="project-image project-yellow">
-
-                            <span>
-                                ☀️
-                            </span>
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-category">
-                                ENERGIA
-                            </span>
-
-                            <h3>
-                                Energia do Futuro
-                            </h3>
-
-                            <p>
-
-                                Educação sobre fontes renováveis
-                                e eficiência energética.
-
-                            </p>
-
-                            <button
-                                type="button"
-                                class="text-button"
-                                data-project="energia">
-
-                                Conhecer projeto →
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             DICA DO DIA
-        ================================================== -->
-
-        <section class="tips-section">
-
-            <div class="container">
-
-                <div class="tips-wrapper">
-
-                    <div class="tips-icon">
-                        💡
-                    </div>
-
-                    <div class="tips-content">
-
-                        <span>
-                            DICA SUSTENTÁVEL DO DIA
-                        </span>
-
-                        <h3 id="dailyTip">
-
-                            Utilize uma garrafa reutilizável
-                            para reduzir o uso de plástico.
-
-                        </h3>
-
-                    </div>
-
-                    <button
-                        type="button"
-                        class="btn btn-light"
-                        id="newTipButton">
-
-                        Nova dica
-                        <span>↻</span>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             FAQ
-        ================================================== -->
-
-        <section class="section faq-section">
-
-            <div class="container">
-
-                <div class="section-header center">
-
-                    <span class="section-label">
-                        DÚVIDAS FREQUENTES
-                    </span>
-
-                    <h2>
-
-                        Perguntas sobre
-                        <span>sustentabilidade.</span>
-
-                    </h2>
-
-                </div>
-
-
-                <div class="faq-container">
-
-
-                    <!-- FAQ 1 -->
-
-                    <div class="faq-item">
-
-                        <button
-                            type="button"
-                            class="faq-question">
-
-                            <span>
-                                O que é sustentabilidade?
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-
-                                Sustentabilidade é a busca por
-                                desenvolvimento que atenda às
-                                necessidades atuais sem comprometer
-                                as futuras gerações.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- FAQ 2 -->
-
-                    <div class="faq-item">
-
-                        <button
-                            type="button"
-                            class="faq-question">
-
-                            <span>
-                                Como posso começar?
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-
-                                Comece com pequenas atitudes:
-                                economize água e energia, reduza
-                                desperdícios, reutilize materiais
-                                e separe os resíduos.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- FAQ 3 -->
-
-                    <div class="faq-item">
-
-                        <button
-                            type="button"
-                            class="faq-question">
-
-                            <span>
-                                Por que reciclar?
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-
-                                A reciclagem pode reduzir a quantidade
-                                de resíduos descartados e permite que
-                                determinados materiais sejam
-                                reaproveitados.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- FAQ 4 -->
-
-                    <div class="faq-item">
-
-                        <button
-                            type="button"
-                            class="faq-question">
-
-                            <span>
-                                O que são os ODS?
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-
-                                Os Objetivos de Desenvolvimento
-                                Sustentável são 17 objetivos globais
-                                que fazem parte da Agenda 2030.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- FAQ 5 -->
-
-                    <div class="faq-item">
-
-                        <button
-                            type="button"
-                            class="faq-question">
-
-                            <span>
-                                Uma pessoa consegue fazer diferença?
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-
-                                Sim. Pequenas atitudes individuais
-                                podem influenciar famílias, escolas,
-                                empresas e comunidades.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             NEWSLETTER
-        ================================================== -->
-
-        <section class="newsletter-section">
-
-            <div class="container">
-
-                <div class="newsletter-box">
-
-                    <div class="newsletter-content">
-
-                        <span>
-                            🌱 FAÇA PARTE DA MUDANÇA
-                        </span>
-
-                        <h2>
-                            Receba conteúdos sustentáveis.
-                        </h2>
-
-                        <p>
-
-                            Cadastre seu e-mail para receber
-                            dicas, desafios e novidades.
-
-                        </p>
-
-                    </div>
-
-
-                    <form
-                        class="newsletter-form"
-                        id="newsletterForm">
-
-                        <input
-                            type="email"
-                            id="newsletterEmail"
-                            placeholder="Seu melhor e-mail"
-                            autocomplete="email"
-                            required>
-
-                        <button
-                            type="submit"
-                            class="btn btn-primary">
-
-                            Quero participar
-
-                        </button>
-
-                    </form>
-
-
-                    <div
-                        class="newsletter-message"
-                        id="newsletterMessage">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =====================================================
-         RODAPÉ
-    ====================================================== -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-
-                <!-- MARCA -->
-
-                <div class="footer-brand">
-
-                    <a
-                        href="#inicio"
-                        class="logo footer-logo">
-
-                        <div class="logo-icon">
-                            🌱
-                        </div>
-
-                        <div class="logo-text">
-
-                            <strong>
-                                EcoVida
-                            </strong>
-
-                            <span>
-                                Planeta • Pessoas • Futuro
-                            </span>
-
-                        </div>
-
-                    </a>
-
-                    <p>
-
-                        Uma plataforma dedicada à educação
-                        ambiental e à construção de um futuro
-                        mais sustentável.
-
-                    </p>
-
-
-                    <div class="social-links">
-
-                        <a
-                            href="#"
-                            aria-label="Instagram">
-                            📷
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="Facebook">
-                            f
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="YouTube">
-                            ▶
-                        </a>
-
-                        <a
-                            href="#"
-                            aria-label="LinkedIn">
-                            in
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PLATAFORMA -->
-
-                <div class="footer-column">
-
-                    <h3>
-                        Plataforma
-                    </h3>
-
-                    <a href="#inicio">
-                        Início
-                    </a>
-
-                    <a href="#sobre">
-                        Sobre
-                    </a>
-
-                    <a href="#acoes">
-                        Ações
-                    </a>
-
-                    <a href="#calculadora">
-                        Calculadora
-                    </a>
-
-                    <a href="#desafios">
-                        Desafios
-                    </a>
-
-                </div>
-
-
-                <!-- CONTEÚDOS -->
-
-                <div class="footer-column">
-
-                    <h3>
-                        Conteúdos
-                    </h3>
-
-                    <a href="#sustentabilidade">
-                        Sustentabilidade
-                    </a>
-
-                    <a href="#projetos">
-                        Projetos
-                    </a>
-
-                    <a href="#calculadora">
-                        Pegada ecológica
-                    </a>
-
-                    <a href="#desafios">
-                        Desafios
-                    </a>
-
-                    <a href="#">
-                        Materiais educativos
-                    </a>
-
-                </div>
-
-
-                <!-- CONTATO -->
-
-                <div class="footer-column">
-
-                    <h3>
-                        Contato
-                    </h3>
-
-                    <a href="mailto:contato@ecovida.com">
-                        📧 contato@ecovida.com
-                    </a>
-
-                    <a href="#">
-                        📍 Brasil
-                    </a>
-
-                    <a href="#">
-                        🌎 Pelo planeta
-                    </a>
-
-                    <button
-                        type="button"
-                        class="footer-contact-button"
-                        id="contactButton">
-
-                        Fale conosco →
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- PARTE INFERIOR -->
-
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 EcoVida. Todos os direitos reservados.
-                </p>
-
-                <div>
-
-                    <a href="#">
-                        Política de privacidade
-                    </a>
-
-                    <a href="#">
-                        Termos de uso
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-    <!-- =====================================================
-         BOTÃO VOLTAR AO TOPO
-    ====================================================== -->
-
-    <button
-        type="button"
-        class="back-to-top"
-        id="backToTop"
-        aria-label="Voltar ao topo">
-
-        ↑
-
-    </button>
-
-
-    <!-- =====================================================
-         MODAL
-    ====================================================== -->
-
-    <div
-        class="modal"
-        id="mainModal"
-        aria-hidden="true">
-
-        <div class="modal-overlay"></div>
-
-        <div class="modal-content">
-
-            <button
-                type="button"
-                class="modal-close"
-                id="modalClose"
-                aria-label="Fechar">
-
-                ✕
-
-            </button>
-
-            <div id="modalBody">
-
-                <!-- Conteúdo será inserido pelo JavaScript -->
-
-            </div>
-
-        </div>
-
+    <div>
+        <strong id="notificationTitle">Sucesso!</strong>
+        <p id="notificationText">Ação realizada com sucesso.</p>
     </div>
 
+    <button type="button" id="notificationClose" aria-label="Fechar notificação">✕</button>
+</div>
 
-    <!-- =====================================================
-         NOTIFICAÇÃO
-    ====================================================== -->
-
-    <div
-        class="notification"
-        id="notification">
-
-        <div class="notification-icon">
-            ✓
-        </div>
-
-        <div>
-
-            <strong id="notificationTitle">
-                Sucesso!
-            </strong>
-
-            <p id="notificationText">
-                Ação realizada com sucesso.
-            </p>
-
-        </div>
-
-        <button
-            type="button"
-            id="notificationClose"
-            aria-label="Fechar notificação">
-
-            ✕
-
-        </button>
-
-    </div>
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
